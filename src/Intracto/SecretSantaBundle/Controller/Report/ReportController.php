@@ -17,13 +17,10 @@ class ReportController extends Controller
      */
     public function reportAction()
     {
-        //        $this->denyAccessUnlessGranted('ROLE_ADWORDS');
-//
-//        $startCrawling = new \DateTime();
-//        $startCrawling->sub(new \DateInterval('P4M'));
-//
-//        return [
-//            'participants' => $this->get('intracto_secret_santa.repository.participant')->findAfter($startCrawling),
-//        ];
+        $reportQuery = $this->get('intracto_secret_santa.query.report');
+
+        return [
+            'years' => $reportQuery->getSelectableYears(),
+        ];
     }
 }

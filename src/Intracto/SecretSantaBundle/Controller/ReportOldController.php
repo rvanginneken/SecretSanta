@@ -16,8 +16,8 @@ class ReportOldController extends Controller
     {
         /** @var \Intracto\SecretSantaBundle\Query\GoogleAnalyticsQuery $googleAnalyticsQuery */
         $googleAnalyticsQuery = $this->get('intracto_secret_santa.query.google_analytics');
-        /** @var \Intracto\SecretSantaBundle\Query\ReportQuery $reportQuery */
-        $reportQuery = $this->get('intracto_secret_santa.query.report');
+        /** @var \Intracto\SecretSantaBundle\Query\ReportOldQuery $reportQuery */
+        $reportQuery = $this->get('intracto_secret_santa.query.report_old');
         /** @var \Intracto\SecretSantaBundle\Query\SeasonComparisonReportQuery $seasonComparisonReportQuery */
         $seasonComparisonReportQuery = $this->get('intracto_secret_santa.query.season_comparison_report');
         /** @var \Intracto\SecretSantaBundle\Query\FeaturedYearsQuery $featuredYearsQuery */
