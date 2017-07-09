@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-class ReportController extends Controller
+class ReportOldController extends Controller
 {
     /**
-     * @Route("/report/{year}", defaults={"year" = "all"}, name="report")
+     * @Route("/report_old/{year}", defaults={"year" = "all"}, name="report")
      * @Template()
      */
     public function indexAction($year)
