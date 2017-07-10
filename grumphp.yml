@@ -6,7 +6,7 @@ parameters:
     tasks:
         git_commit_message:
             matchers:
-                - /#([0-9]*)/
+                - /(#([0-9]*))|SANTA-([0-9]+): (.+)/
             case_insensitive: true
         phpunit:
             config_file: app
