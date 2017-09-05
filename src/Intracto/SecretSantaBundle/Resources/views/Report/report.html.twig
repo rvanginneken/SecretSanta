@@ -22,17 +22,8 @@
         </div>
         <small>Choose the season you want to get the data from. Each season begins the 1st of April and lasts until March 31.</small>
 
-        <div id="chart_div"></div>
+        <div id="parties_per_year"></div>
+        <div id="ip_type_visitors"></div>
 
-        {#{% if party_data is empty %}#}
-            {#<div>#}
-                {#<p>There are no data available for this season.</p>#}
-            {#</div>#}
-        {#{% else %}#}
-            {#{% include 'IntractoSecretSantaBundle:ReportOld:result.html.twig' %}#}
-            {#{% include 'IntractoSecretSantaBundle:ReportOld:analytics.html.twig' %}#}
-
-            {#<div class="clearfix"></div>#}
-        {#{% endif %}#}
     </div>
 {% endblock main %}
